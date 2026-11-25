@@ -1,0 +1,74 @@
+{
+ "scenarios": [
+  {
+   "name": "Ransomware outage",
+   "freq_low": 0.05,
+   "freq_mode": 0.15,
+   "freq_high": 0.4,
+   "loss_p5": 400000,
+   "loss_p95": 12000000,
+   "control": {
+    "name": "EDR + immutable backups",
+    "annual_cost": 380000,
+    "freq_reduction": 0.35,
+    "impact_reduction": 0.5
+   }
+  },
+  {
+   "name": "Payment fraud / BEC",
+   "freq_low": 0.5,
+   "freq_mode": 1.2,
+   "freq_high": 3.0,
+   "loss_p5": 20000,
+   "loss_p95": 900000,
+   "control": {
+    "name": "Dual approval + call-back",
+    "annual_cost": 120000,
+    "freq_reduction": 0.6,
+    "impact_reduction": 0.3
+   }
+  },
+  {
+   "name": "AML/KYC regulatory sanction",
+   "freq_low": 0.05,
+   "freq_mode": 0.1,
+   "freq_high": 0.3,
+   "loss_p5": 500000,
+   "loss_p95": 25000000,
+   "control": {
+    "name": "Automated screening",
+    "annual_cost": 520000,
+    "freq_reduction": 0.5,
+    "impact_reduction": 0.2
+   }
+  },
+  {
+   "name": "Critical supplier failure",
+   "freq_low": 0.1,
+   "freq_mode": 0.25,
+   "freq_high": 0.6,
+   "loss_p5": 300000,
+   "loss_p95": 8000000,
+   "control": {
+    "name": "Dual-source critical inputs",
+    "annual_cost": 400000,
+    "freq_reduction": 0.4,
+    "impact_reduction": 0.5
+   }
+  },
+  {
+   "name": "Insider data leak",
+   "freq_low": 0.1,
+   "freq_mode": 0.3,
+   "freq_high": 0.8,
+   "loss_p5": 100000,
+   "loss_p95": 4000000,
+   "control": {
+    "name": "DLP + least privilege",
+    "annual_cost": 150000,
+    "freq_reduction": 0.3,
+    "impact_reduction": 0.3
+   }
+  }
+ ]
+}
